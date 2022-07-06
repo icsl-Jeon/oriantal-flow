@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/style.module.css'
 import {Button} from "react-bootstrap";
 
 

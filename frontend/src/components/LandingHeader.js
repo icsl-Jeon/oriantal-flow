@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from '../styles/style.module.css'
 import {Button} from "react-bootstrap";
 
 const brand_name = "ORIANTAL FLOW"
@@ -13,9 +12,10 @@ const Header = () => {
                 </div>
                 <div className="mt-3">
                     <ul className="d-flex flex-row m-1">
+                        {true &&
                         <Button type="button" className="btn btn-light btn btn-outline-primary  m-1">
                             Create
-                        </Button>
+                        </Button>}
                         <Button className="btn btn-light btn-outline-primary  m-1">
                             Explore
                         </Button>
