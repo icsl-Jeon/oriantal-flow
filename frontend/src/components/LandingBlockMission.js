@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from "react-bootstrap";
+import {Link} from "react-router-dom";
 
 
 const BlockMission = () => {
@@ -8,9 +9,13 @@ const BlockMission = () => {
             <div className="display-3 mb-3"> Mission block</div>
             <div className="display-5 mb-0"> Supporting message ...</div>
             <div>
-                <button className="btn btn-primary mt-4">
-                    Join
-                </button>
+                <Link to="/feed">
+                    <button className="btn btn-primary mt-4">
+                        Join
+                    </button>
+
+                </Link>
+
             </div>
         </div>
     )
