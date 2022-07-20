@@ -1,20 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-import LandingPage from "./pages/LandingPage";
-import FeedPage from "./pages/FeedPage"
-import {BrowserRouter, Route, Routes, Router} from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import {Container} from "react-bootstrap";
 
 function App() {
     return (
         <div className="App">
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<LandingPage/>}>
-                    </Route>
-                    <Route path="/feed" element={<FeedPage/>}>
-                    </Route>
-                </Routes>
-            </BrowserRouter>
+            <Header></Header>
+            <main>
+                <Container>
+                    <h1> Welcome </h1>
+                </Container>
+            </main>
+            <Footer></Footer>
         </div>
     );
 }
