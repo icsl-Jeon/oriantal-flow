@@ -2,7 +2,7 @@ import LandingHeader from "../components/LandingHeader";
 
 import Card from "react-bootstrap/Card";
 import CardGroup from "react-bootstrap/CardGroup";
-import { Button, Row, Col, Container } from "react-bootstrap";
+import { Button, Row, Col, Container, Image } from "react-bootstrap";
 
 function LandingPage() {
   return (
@@ -67,7 +67,13 @@ function LandingPage() {
             <Row className="display-5"> Explore </Row>{" "}
             <Row> Read the insights </Row>
           </Col>
-          <Col className="border">Describing picture </Col>
+          <Col className="border">
+            <img
+              src="%PUBLIC_URL%/images/board_diagram.png"
+              className="App-logo"
+              alt="React"
+            />{" "}
+          </Col>
         </Row>
 
         <Row className="p-2 border">
