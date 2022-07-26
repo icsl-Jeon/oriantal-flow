@@ -1,0 +1,68 @@
+const posts = [
+  {
+    id: 1,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_1.png",
+  },
+  {
+    id: 2,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_2.png",
+  },
+  {
+    id: 3,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_3.png",
+  },
+  {
+    id: 4,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_4.png",
+  },
+  {
+    id: 5,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_1.png",
+  },
+  {
+    id: 6,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_2.png",
+  },
+  {
+    id: 7,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_3.png",
+  },
+  {
+    id: 8,
+    title: "Analysis on recent stocks",
+    author: "BF Jeon",
+    date: "24th July",
+    like: 7200,
+    images: "images/stock_4.png",
+  },
+];
+
+export default posts;
