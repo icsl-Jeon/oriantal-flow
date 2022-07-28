@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import FeedPage from "./pages/FeedPage";
 import LandingHeader from "./components/LandingHeader";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import PostPage from "./pages/PostPage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Routes>
               <Route path="/" element={<LandingPage />} exact />
               <Route path="/feed" element={<FeedPage />} exact />
+              <Route path="/feed/:id" element={<PostPage />} />
             </Routes>
           </Container>
         </main>

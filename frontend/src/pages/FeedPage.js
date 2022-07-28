@@ -1,6 +1,7 @@
 import React from "react";
 import posts from "../posts";
 import { Row, Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Post({ post }) {
   return (
@@ -9,11 +10,13 @@ function Post({ post }) {
         <Card.Title>
           <span className="display-10">{post.title} </span> <hr></hr>
         </Card.Title>
-        <Card.Img
-          className="p-2"
-          src={post.images}
-          style={{ height: "80%", width: "80%" }}
-        />
+        <Link to={`/feed/${post.id}`}>
+          <Card.Img
+            className="p-2"
+            src={post.images}
+            style={{ height: "80%", width: "80%" }}
+          />
+        </Link>
       </Card.Body>
       <Card.Footer>
         <Row>
@@ -35,7 +38,6 @@ function Post({ post }) {
 }
 
 export default function FeedPage() {
-  const post_import = posts;
   return (
     <Row className="m-3">
       {posts.map((post) => (
