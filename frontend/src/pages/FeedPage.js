@@ -1,7 +1,7 @@
-import React from "react";
-import posts from "../posts";
+import { React, useState, useEffect } from "react";
 import { Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Post({ post }) {
   return (
@@ -38,6 +38,20 @@ function Post({ post }) {
 }
 
 export default function FeedPage() {
+  const [posts, setPosts] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    async function fetchPosts() {
+      setLoading(true);
+      const { data } = await axios.get("http://127.0.0.1:8000/api/posts/");
+      setPosts(data);
+      setLoading(false);
+    }
+
+    fetchPosts();
+  }, []);
+
   return (
     <Row className="m-3">
       {posts.map((post) => (
